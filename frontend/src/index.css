@@ -1,0 +1,31 @@
+/* Smooth scrolling across the whole document */
+
+  
+  /* Customizing scroll speed */
+  /* In your CSS file */
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+  body {
+    overflow-y: scroll; /* Ensures scrolling works */
+    scroll-snap-type: y mandatory; /* Optional, gives a smoother snap scroll effect */
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Optional: Style for the scrollbar to make it more visually appealing */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
